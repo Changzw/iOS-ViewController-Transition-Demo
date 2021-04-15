@@ -65,7 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				FD368AD11C1F26C9001D204F /* AppDelegate.swift */,
-				FD0E268F1E49BFC800557F5C /* SlideAnimationController.swift */,
 				FD8FA97F1C20629C00C30038 /* PresentingViewController.swift */,
 				FD368AD31C1F26C9001D204F /* PresentedViewController.swift */,
 				FDC202241C22AA500002D944 /* SDEModalTransitionDelegate.swift */,
@@ -75,6 +74,7 @@
 				FD368AD81C1F26C9001D204F /* Assets.xcassets */,
 				FD368ADA1C1F26C9001D204F /* LaunchScreen.storyboard */,
 				FD368ADD1C1F26C9001D204F /* Info.plist */,
+				FD0E268F1E49BFC800557F5C /* SlideAnimationController.swift */,
 			);
 			path = CustomModalTransition;
 			sourceTree = "<group>";
@@ -120,6 +120,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -280,7 +281,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = seedante.CustomModalTransition;
 				PRODUCT_NAME = CustomModalTransitionDemo;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -293,7 +294,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = seedante.CustomModalTransition;
 				PRODUCT_NAME = CustomModalTransitionDemo;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

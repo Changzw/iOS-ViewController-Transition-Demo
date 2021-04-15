@@ -9,28 +9,28 @@
 import UIKit
 
 class SDEPercentDrivenInteractiveTransition: NSObject, UIViewControllerInteractiveTransitioning {
-    
-    weak var containerTransitionContext: ContainerTransitionContext?
-    
-    func startInteractiveTransition(_ transitionContext: UIViewControllerContextTransitioning) {
-        if let context = transitionContext as? ContainerTransitionContext{
-            containerTransitionContext = context
-            containerTransitionContext?.activateInteractiveTransition()
-        }else{
-            fatalError("\(transitionContext) is not class or subclass of ContainerTransitionContext")
-        }
+  
+  weak var containerTransitionContext: ContainerTransitionContext?
+  
+  func startInteractiveTransition(_ transitionContext: UIViewControllerContextTransitioning) {
+    if let context = transitionContext as? ContainerTransitionContext{
+      containerTransitionContext = context
+      containerTransitionContext?.activateInteractiveTransition()
+    }else{
+      fatalError("\(transitionContext) is not class or subclass of ContainerTransitionContext")
     }
-    
-    func updateInteractiveTransition(_ percentComplete: CGFloat){
-        containerTransitionContext?.updateInteractiveTransition(percentComplete)
-    }
-    
-    func cancelInteractiveTransition(){
-        containerTransitionContext?.cancelInteractiveTransition()
-    }
-    
-    func finishInteractiveTransition(){
-        containerTransitionContext?.finishInteractiveTransition()
-    }
-    
+  }
+  
+  func updateInteractiveTransition(_ percentComplete: CGFloat){
+    containerTransitionContext?.updateInteractiveTransition(percentComplete)
+  }
+  
+  func cancelInteractiveTransition(){
+    containerTransitionContext?.cancelInteractiveTransition()
+  }
+  
+  func finishInteractiveTransition(){
+    containerTransitionContext?.finishInteractiveTransition()
+  }
+  
 }
